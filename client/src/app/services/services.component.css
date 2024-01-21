@@ -1,3 +1,102 @@
-#sol {
-    width: 500px;
+.services-main-cont {
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-div {
+    width: 50%;
+    height: 100%;
+    background: url("./image/questio2.jpg") center center/cover;
+    
+}
+.cont {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cont h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    background-color: #E87C10;
+    padding: 16px 32px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.input-cont {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.input-cont input {
+    padding: 8px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px;
+}
+.input-cont input:focus {
+    border: 2px solid #6E2BF3;
+}
+.input-cont button {
+    --color: #6E2BF3;
+    font-family: inherit;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+.input-cont button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.input-cont button:hover {
+    color: #fff;
+}
+
+.input-cont button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.input-cont button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.input-cont button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+}
+.cont h2 {
+    margin: 10px;
+}
+.cont h2 a {
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 50px;
 }
