@@ -1,0 +1,15 @@
+.nav-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #6E2BF3;
+    color: white;
+    height: 80px;
+}
+.links {
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 23px;
+    color: white;
+}
