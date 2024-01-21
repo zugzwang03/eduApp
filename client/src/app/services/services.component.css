@@ -35,7 +35,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
-    padding: 0 20px;
+    
 }
 
 .input-cont input {
@@ -93,10 +93,19 @@
     transition: background 0s;
 }
 .cont h2 {
-    margin: 10px;
+    margin-top: 30px;
 }
 .cont h2 a {
     font-size: 16px;
     text-decoration: none;
-    margin-top: 50px;
+    padding: 8px 16px;
+    border: 2px solid seagreen;
+    color: black;
+    border-radius: 30px;
+}
+#sol {
+    width: 60%;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 5px;
 }
