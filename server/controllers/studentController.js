@@ -7,11 +7,10 @@ const register = catchAsyncErrors(async (req, res, next) => {
     var student = await Student.findOne({ email });
     console.log(email);
     if (student) {
-        res.status(401).json({
+        return res.status(200).json({
             success: false,
             message: "Another student with same phone number already exists"
         });
-        return next(new Error("Another student with same phone number already exists"));
     }
     student = await Student.create(req.body);
     sendCookie(student, 201, res);
@@ -21,14 +20,13 @@ const login = catchAsyncErrors(async (req, res, next) => {
     const { email, password } = req.body;
     const student = await Student.findOne({ email });
     if (!student) {
-        res.status(401).json({
+        return res.status(200).json({
             success: false,
             message: "Student not found"
         });
-        return next(new Error("Student not found"));
     }
     if (password !== await student.password) {
-        res.status(401).json({
+        res.status(200).json({
             success: false,
             message: "Incorrect password"
         });
