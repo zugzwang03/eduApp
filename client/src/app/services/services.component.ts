@@ -1,6 +1,5 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, Input, NgModule } from '@angular/core';
-import { FormsModule, NgModel } from '@angular/forms';
+import { Component, Input} from '@angular/core';
+import { FormsModule} from '@angular/forms';
 import { ClientService } from '../client.service';
 
 @Component({

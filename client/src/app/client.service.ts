@@ -9,6 +9,6 @@ export class ClientService {
 
   constructor(private http: HttpClient) { }
   postSubjectiveQs(question: string): Observable<string> {
-    return this.http.get<string>(`http://localhost:3000/detailedSubjectiveQs?question=${question}`);
+    return this.http.get<string>(`http://localhost:3000/api/v1/detailedSubjectiveQs?question=${question}`);
   }
 }
