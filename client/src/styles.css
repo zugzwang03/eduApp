@@ -1,1 +1,16 @@
+@font-face {
+    font-family: "helvatica";
+    src: url("./fonts/HelveticaNowText-Regular.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvatica;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
 /* You can add global styles to this file, and also import other style files */

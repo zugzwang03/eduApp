@@ -5,11 +5,12 @@
   <a routerLink="/heroes">Heroes</a>
 </nav> -->
 
-<app-title-bar></app-title-bar>
-
-<nav>
-    <a routerLink="home">Home </a>
-    <a routerLink="services">Services </a>
-    <a routerLink="contact-us">Contact </a>
-</nav>
+<div class="nav-cont">
+  <app-title-bar></app-title-bar>
+  <nav>
+      <a class="links" routerLink="home">Home </a>
+      <a class="links" routerLink="services">Services </a>
+      <a class="links" routerLink="contact-us">Contact </a>
+  </nav>
+</div>
 <router-outlet></router-outlet>
