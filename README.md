@@ -13,4 +13,24 @@
 </p>
 <img src="https://github.com/zugzwang03/eduApp/assets/95460021/6f212a5d-ff13-4c89-8839-b15089c779ea">
 
+<h1>Projet SetUp:</h1>
+
+<h3> Step 1: </h3>
+<ol>
+<li> cd client</li>
+<li> npm install </li>
+<li> ng server </li>
+</ol> 
+<h3> Step 2: </h3>
+<ol>
+<li> cd server </li>
+<li> npm install</li>
+<li> npm start </li>
+</ol>
+<h3> Step 3: </h3>
+<ol>
+<li> cd imageToDigits </li>
+<li> streamlit run main.py </li>
+</ol>
+
 
