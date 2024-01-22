@@ -13,3 +13,11 @@
     font-size: 23px;
     color: white;
 }
+
+.linksName {
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
