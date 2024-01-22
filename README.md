@@ -13,7 +13,7 @@
 </p>
 <img src="https://github.com/zugzwang03/eduApp/assets/95460021/6f212a5d-ff13-4c89-8839-b15089c779ea">
 
-<h1>Projet SetUp:</h1>
+<h1>Project SetUp:</h1>
 
 <h3> Step 1: </h3>
 <ol>
