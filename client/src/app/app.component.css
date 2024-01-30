@@ -8,6 +8,11 @@
     height: 80px;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 .links {
     text-decoration: none;
     margin: 0 12px;
@@ -23,39 +28,62 @@
     cursor: pointer;
 }
 
-.drop-down-menu {
+button {
+    --primary-color: #492E87;
+    --secondary-color: #fff;
+    --hover-color: #0A1D56;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+}
+
+button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
     position: relative;
-    display: inline-block;
+    transition: 0.2s;
 }
 
-.list {
+button .arrow::before {
+    content: "";
+    box-sizing: border-box;
     position: absolute;
-    text-align: center;
-    padding: 8px 16px;
-    background-color: white;
-    border-radius: 5px;
-    top: 25px;
-    left: 2px;
-    z-index: 1;
-    display: none;
-    width: 100px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
 }
 
-.item {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: block;
-    color: black;
-    cursor: pointer;
-    padding: 8px;
-    text-decoration: none;
+button:hover {
+    background-color: var(--hover-color);
 }
 
-.drop-down-menu:hover .list {
-    display: block;
+button:hover .arrow {
+    background: var(--secondary-color);
 }
 
-.item:hover {
-    color: #6E2BF3;
+button:hover .arrow:before {
+    right: 0;
 }
