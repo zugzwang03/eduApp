@@ -6,6 +6,7 @@ import { ServicesComponent } from './services/services.component';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import { StudentLoginComponent } from './student-login/student-login.component';
 import { TeacherLoginComponent } from './teacher-login/teacher-login.component';
+import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,5 +16,6 @@ export const routes: Routes = [
     { path: 'pop-up', component: PopUpComponent },
     { path: 'student-login', component: StudentLoginComponent },
     { path: 'teacher-login', component: TeacherLoginComponent },
+    { path: 'student-registration', component: StudentRegistrationComponent },
     { path: '**', redirectTo: 'home' }
 ];
