@@ -15,6 +15,7 @@ export const routes: Routes = [
     { path: 'services', component: ServicesComponent },
     { path: 'pop-up', component: PopUpComponent },
     { path: 'student-login', component: StudentLoginComponent },
+    { path: 'student-registration', component: StudentRegistrationComponent },
     { path: 'teacher-login', component: TeacherLoginComponent },
     { path: 'student-registration', component: StudentRegistrationComponent },
     { path: '**', redirectTo: 'home' }
