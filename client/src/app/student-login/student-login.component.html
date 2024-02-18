@@ -6,15 +6,15 @@
         <div class="input-cont">
             <div class="input-inner">
                 <p>Email/Username</p>
-                <input type="text" class="email" placeholder="Email/Username">
+                <input type="text" class="email" name="email" [(ngModel)]="studentLogin.email" placeholder="Email/Username">
             </div>
             <div class="input-inner">
                 <p>Password</p>
-                <input type="password" class="password" placeholder="Password">
+                <input type="text" class="password" name="password" [(ngModel)]="studentLogin.password" placeholder="Password">
             </div>
         </div>
         <div class="button">
-            <button>Login</button>
+            <button (click)="login()">Login</button>
         </div>
     </div>
 </div>
