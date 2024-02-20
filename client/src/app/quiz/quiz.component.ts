@@ -103,6 +103,7 @@ export class QuizComponent implements OnInit {
       questionElement.className = 'question';
       questionElement!.style.marginBottom = '10px';
       questionElement!.style.fontWeight = 'bold'
+      questionElement!.style.fontSize = '20px'
       questionElement.innerHTML = questionData.question;
 
       const optionsElement = document.createElement('div');
@@ -110,6 +111,7 @@ export class QuizComponent implements OnInit {
       optionsElement!.style.display = 'flex';
       optionsElement!.style.flexDirection = 'column';
       optionsElement!.style.marginBottom = '20px';
+      optionsElement!.style.fontSize = '20px';
 
       const shuffledOptions = [...questionData.options];
       shuffleArray(shuffledOptions);
