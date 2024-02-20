@@ -1,0 +1,38 @@
+<body>
+    <header><h1 mat-dialog-title>Are you a teacher or a student?</h1></header>
+    <div class="container_profile">
+      <div class="student">
+        <img src="assets/pop-up_images/student illustration..jpg" alt="" />
+      </div>
+      <div class="teacher">
+        <img src="assets/pop-up_images/teacher-illustration.png" alt="" />
+      </div>
+    </div>
+    <div class="buttons">
+      <mat-dialog-actions>
+        <div class="st">
+          <button
+            class="button-17"
+            mat-button
+            mat-dialog-close
+            mat-dialog-close="student"
+            routerLink="student-registration"
+          >
+            Student
+          </button>
+        </div>
+  
+        <div class="te">
+          <button
+            class="button-17"
+            mat-dialog-close
+            mat-dialog-close="teacher"
+            routerLink="teacher_registration"
+          >
+            Teacher
+          </button>
+        </div>
+      </mat-dialog-actions>
+    </div>
+  </body>
+  
