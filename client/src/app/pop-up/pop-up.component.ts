@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { RouterLink } from '@angular/router';
+import { RegistrationPopUpComponent } from '../registration-pop-up/registration-pop-up.component';
 
 @Component({
   selector: 'app-pop-up',
@@ -10,5 +11,12 @@ import { RouterLink } from '@angular/router';
   styleUrl: './pop-up.component.css'
 })
 export class PopUpComponent {
+  constructor(private dialog: MatDialog) {}
+  openDialogBox() {
+    let dialogRef = this.dialog.open(RegistrationPopUpComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      
+    })
+  }
 
 }
