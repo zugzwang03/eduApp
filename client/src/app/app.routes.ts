@@ -9,6 +9,7 @@ import { TeacherLoginComponent } from './teacher-login/teacher-login.component';
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 import { RegistrationPopUpComponent } from './registration-pop-up/registration-pop-up.component';
 import { TeacherRegistrationComponent } from './teacher-registration/teacher-registration.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,5 +22,6 @@ export const routes: Routes = [
     {path: 'registration_pop-up', component: RegistrationPopUpComponent},
     {path: 'teacher_registration',component: TeacherRegistrationComponent},
     { path: 'student-registration', component: StudentRegistrationComponent },
+    { path: 'quiz', component: QuizComponent },
     { path: '**', redirectTo: 'home' }
 ];
