@@ -101,10 +101,17 @@ export class QuizComponent implements OnInit {
 
       const questionElement = document.createElement('div');
       questionElement.className = 'question';
+      questionElement!.style.marginBottom = '10px';
+      questionElement!.style.fontWeight = 'bold'
+      questionElement!.style.fontSize = '20px'
       questionElement.innerHTML = questionData.question;
 
       const optionsElement = document.createElement('div');
       optionsElement.className = 'options';
+      optionsElement!.style.display = 'flex';
+      optionsElement!.style.flexDirection = 'column';
+      optionsElement!.style.marginBottom = '20px';
+      optionsElement!.style.fontSize = '20px';
 
       const shuffledOptions = [...questionData.options];
       shuffleArray(shuffledOptions);
@@ -112,6 +119,7 @@ export class QuizComponent implements OnInit {
       for (let i = 0; i < shuffledOptions.length; i++) {
         const option = document.createElement('label');
         option.className = 'option';
+        option!.style.marginBottom = '10px'
 
         const radio = document.createElement('input');
         radio.type = 'radio';
